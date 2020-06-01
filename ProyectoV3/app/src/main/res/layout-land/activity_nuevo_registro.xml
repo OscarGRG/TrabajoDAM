@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFEDF2F7"
+    tools:context=".NuevoRegistro">
+
+    <TextView
+        android:id="@+id/lblRegistroNuevo"
+        android:layout_width="362dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/tituloRegistrar"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btHome"
+        android:layout_width="64dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:contentDescription="@string/blanco"
+        android:onClick="btnHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/salir" />
+
+    <EditText
+        android:id="@+id/editTextoRegistro"
+        android:layout_width="330dp"
+        android:layout_height="233dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="158dp"
+        android:background="#1B2C53C7"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/escribir"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTextoRegistro"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <TextView
+        android:id="@+id/lblTextoRegistro"
+        android:layout_width="280dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center"
+        android:text="@string/TEscribir"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRegistroNuevo" />
+
+    <TextView
+        android:id="@+id/lblTextoFecha"
+        android:layout_width="148dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="@string/TFecha"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRegistroNuevo" />
+
+    <TextView
+        android:id="@+id/lblTextoHora"
+        android:layout_width="148dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="@string/THora"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTextoFecha" />
+
+    <TextView
+        android:id="@+id/lblFecha"
+        android:layout_width="148dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:background="#1B2C53C7"
+        android:gravity="center"
+        android:text="@string/blanco"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTextoFecha" />
+
+    <TextView
+        android:id="@+id/lblHora"
+        android:layout_width="148dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:background="#1B2C53C7"
+        android:gravity="center"
+        android:text="@string/blanco"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTextoHora" />
+
+    <Button
+        android:id="@+id/btGuardar"
+        android:layout_width="145dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:background="#2038D6"
+        android:onClick="insertarResultados"
+        android:text="@string/btnGuardar"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblHora" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

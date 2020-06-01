@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFEDF2F7"
+    tools:context=".DetallesEjercicio">
+
+    <TextView
+        android:id="@+id/lblTituloNRegistro"
+        android:layout_width="228dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/Detalles"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btHome"
+        android:layout_width="64dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:contentDescription="@string/blanco"
+        android:onClick="btHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/salir" />
+
+    <TextView
+        android:id="@+id/lblMaterial"
+        android:layout_width="157dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:gravity="center"
+        android:text="@string/Material"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTextoZona" />
+
+    <TextView
+        android:id="@+id/lblZona"
+        android:layout_width="157dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:text="@string/Zona_trabajada"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btHome" />
+
+    <TextView
+        android:id="@+id/lblTextoZona"
+        android:layout_width="157dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="36dp"
+        android:background="#1B2C53C7"
+        android:gravity="center"
+        android:text="@string/blanco"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblZona" />
+
+    <TextView
+        android:id="@+id/lbltextoMaterial"
+        android:layout_width="157dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:background="#1B2C53C7"
+        android:gravity="center"
+        android:text="@string/blanco"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMaterial" />
+
+    <TextView
+        android:id="@+id/lblHowToDo"
+        android:layout_width="250dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:text="@string/detalles_ejercicio"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloNRegistro" />
+
+    <TextView
+        android:id="@+id/lblTextoHTDit"
+        android:layout_width="312dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"
+        android:background="#1B2C53C7"
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical"
+        android:text="@string/blanco"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblHowToDo" />
+
+    <Button
+        android:id="@+id/btLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="43dp"
+        android:background="#2038D6"
+        android:onClick="btaLista"
+        android:text="@string/btnALista"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbltextoMaterial" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

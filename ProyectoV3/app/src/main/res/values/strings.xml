@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">EasySport</string>
+
+    <!--Strings generales-->
+    <string name="blanco"></string>
+    <string name="btnALista">Volver a la lista</string>
+
+    <!--Strings titulo-->
+    <string name="btnPortada">Entrar</string>
+
+    <!--Strings menú principal-->
+    <string name="tituloPrincipal">Menu Principal</string>
+
+    <!--Strings registros-->
+    <string name="tituloRegistros">Registros</string>
+    <string name="btBorrar">Borrar Registro</string>
+    <!--Strings ejercicios-->
+    <string name="tituloEjercicios">Lista de Ejercicios</string>
+    <string name="btlistarEjercicios">Buscar</string>
+
+    <!--Strings nuevo registro-->
+    <string name="tituloRegistrar">Nuevo Registro</string>
+    <string name="TFecha">Fecha del registro</string>
+    <string name="THora">Hora del registro</string>
+    <string name="Fecha">Date</string>
+    <string name="Hora">Time</string>
+    <string name="TEscribir">Texto a escribir</string>
+    <string name="escribir">aqui se escribirá el texto que se vaya a registrar</string>
+    <string name="btnGuardar">Guardar Registro</string>
+
+    <!--Strings detalles del registro-->
+    <string name="titulodetallesregistro">Detalles del registro</string>
+    <string name="contenido">Contenido del registro</string>
+    <string name="TextoContenido">Aqui se mostrará el contenido registrado por el usuario</string>
+
+
+    <!--Strings ejercicio-->
+    <string name="Detalles">Detalles del ejercicio</string>
+    <string name="Material">Material Necesario</string>
+    <string name="Zona_trabajada">Zona trabajada</string>
+    <string name="detalles_ejercicio">¿Como hacer el ejercicio?</string>
+
+
+
+</resources>

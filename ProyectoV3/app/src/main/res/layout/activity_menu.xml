@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFEDF2F7"
+    tools:context=".Menu">
+
+    <TextView
+        android:id="@+id/tituloPrincipal"
+        android:layout_width="285dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="104dp"
+        android:gravity="center"
+        android:text="@string/tituloPrincipal"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btEjercicios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="38dp"
+        android:background="#00AC5E5E"
+        android:contentDescription="@string/blanco"
+        android:onClick="aEjercicios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloPrincipal"
+        app:srcCompat="@drawable/btnejercicios" />
+
+    <ImageButton
+        android:id="@+id/btVerClima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="84dp"
+        android:background="#00C5B8B8"
+        android:contentDescription="@string/blanco"
+        android:onClick="aClima"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloPrincipal"
+        app:srcCompat="@drawable/btntiempo" />
+
+    <ImageButton
+        android:id="@+id/btCrearRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="68dp"
+        android:background="#00683333"
+        android:contentDescription="@string/blanco"
+        android:onClick="aNuevoRegistro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btVerClima"
+        app:srcCompat="@drawable/btnnuevoregistro" />
+
+    <ImageButton
+        android:id="@+id/btRegistrosGuardados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="38dp"
+        android:background="#004B2A2A"
+        android:contentDescription="@string/blanco"
+        android:onClick="aRegistros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btEjercicios"
+        app:srcCompat="@drawable/btnverregistros" />
+</androidx.constraintlayout.widget.ConstraintLayout>
