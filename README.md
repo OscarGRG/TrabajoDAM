@@ -8,4 +8,4 @@ Este repositorio contiene los siguientes elementos:
     repositorio, de forma que para un facil acceso se ha puesto el enlace
   
   
-  Aplicación creada y desarrollada po Óscar García-Redondo González, en el año 2020
+  Aplicación creada y desarrollada por Óscar García-Redondo González, en el año 2020
